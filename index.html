@@ -250,7 +250,7 @@ body::before {
 .threat-title {
   font-size: 0.86rem;
   font-weight: 500;
-  margin-bottom: 0.32rem;
+  margin-bottom: 0.5rem;
   line-height: 1.35;
   letter-spacing: -0.01em;
 }
@@ -402,7 +402,7 @@ body::before {
 
 .kpi-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--border);
   border-radius: 12px;
@@ -448,7 +448,7 @@ body::before {
 }
 
 .kpi-value {
-  font-size: 2.1rem;
+  font-size: 2.6rem;
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -500,7 +500,7 @@ body::before {
   font-weight: 500;
   letter-spacing: -0.04em;
   line-height: 1;
-  color: var(--accent);
+  color: #fff;
 }
 
 .adoption-label-sub {
@@ -531,7 +531,7 @@ body::before {
 }
 
 .bar-track {
-  height: 16px;
+  height: 24px;
   background: var(--surface-2);
   border-radius: 2px;
   overflow: hidden;
@@ -676,7 +676,7 @@ body::before {
     overflow-y: visible;
   }
   .kpi-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -736,13 +736,13 @@ body::before {
           <div class="threat-severity critical">critical</div>
         </div>
         <div>
-          <div class="threat-title">Taxonomy validation rules silently overwritten when multiple regions edit simultaneously</div>
-          <div class="threat-desc">Concurrent edits to shared naming conventions are causing silent overwrites — no conflict resolution or version diff is surfaced. Teams in EMEA and APAC have lost custom taxonomy rules twice this month. Audit trail shows no warning was triggered.</div>
+          <div class="threat-title">71% of users abandon the record creation flow before reaching the confirmation step</div>
+          <div class="threat-desc">PostHog funnels show a steep drop-off between the field entry and review steps. Users are hitting "Back" or closing the modal instead of confirming. Rage clicks concentrated around the preview area — suggesting the summary layout isn't giving enough confidence to submit.</div>
         </div>
         <div class="threat-sources">
-          <span class="threat-source">datadog · taxonomy-manager</span>
-          <span class="threat-source">dovetail · P04, P09</span>
-          <span class="threat-source">zendesk · 31 tickets</span>
+          <span class="threat-source">posthog · record-creation-funnel</span>
+          <span class="threat-source">dovetail · P06, P11</span>
+          <span class="threat-source">fullstory · rage-clicks</span>
         </div>
       </div>
 
